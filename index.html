@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>About Me</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <h1 class="display-1">Pohle, Erik</h1>
+      <div class="card">
+        <div class="card bg-light text-dark">
+          <p class="card-text">Facts About Me: I actively play soccer, enjoy skating around Boulder, and I love dogs. I am studying Computer Science because I find
+        it to be really interesting and fun to solve the puzzles that they encircle. </p>
+        </div>
+      </div>
+      <br>
+      <h2>My Professional Profile</h2>
+      <a href="https://github.com/ErikPohle" target="_blank" class="btn btn-outline-dark text-dark">My Github</a>
+      <br>
+      <img src="img\my_photo.jpg" class="rounded-circle" alt="My Photo" height="400" width="300">
+      <h3>My Favorite Projects</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Project Name</th>
+            <th scope="col">Technology Used</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Temp</td>
+            <td>Temp</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Temp</td>
+            <td>Temp</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Temp</td>
+            <td>Temp</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3> Countries Travelled </h3>
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <ul>
+              <li>Brazil</li>
+              <li>Tanzania</li>
+              <li>Uganda</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <h3> My Interests </h3>
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <ol>
+              <li>Soccer</li>
+              <li>Artifical Intelligence</li>
+              <li>Skating</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+      Open modal
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">The Modal</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Hello! This is the Modal.
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  </body>
+</html>
