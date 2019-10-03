@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-4">Add New Article</h1>
+      <br>
+      <form>
+        <div class="form-group">
+          <label><b>Article Title</b></label>
+          <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Title">
+          <br>
+          <label><b>Author Name</b></label>
+          <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Name">
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <p><b>Upload Files:</b></p>
+            <input type="file" id="myFile" name="filename2">
+          </div>
+          <div class="col">
+            <label><b>Pages<b></label>
+              <br>
+              <button class="btn btn-outline-dark btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Academics
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Article Text</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label>Select Tags</label>
+            <br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1" style="font-weight:normal">Python</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2" style="font-weight:normal">C++</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3" style="font-weight:normal">Java</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inlineCheckbox4" value="option4">
+              <label class="form-check-label" for="inlineCheckbox3" style="font-weight:normal">Scala</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inlineCheckbox5" value="option5">
+              <label class="form-check-label" for="inlineCheckbox3" style="font-weight:normal">Perl</label>
+            </div>
+          </div>
+          <div class="col">
+            <label>Visibility</label>
+            <br>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Public
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Private
+              </label>
+            </div>
+          </div>
+        </div>
+        <div>
+          <br>
+          <h5>Login to Finish Submitting</h5>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" id="username" aria-describedby="username" placeholder="Username">
+            </div>
+            <div class="col">
+              <input type="password" class="form-control" id="password" aria-describedby="username" placeholder="Password">
+            </div>
+          </div>
+          <br>
+          <input type="checkbox" name="remember" value="remember"> <label style="font-weight:normal">Remember me</label>
+          <br>
+          <button class="btn btn-primary" type="button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
