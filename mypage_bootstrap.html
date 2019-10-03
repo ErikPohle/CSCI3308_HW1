@@ -11,107 +11,97 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <title>About Me</title>
+    <title>Form</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <h1 class="display-1">Pohle, Erik</h1>
-      <div class="card">
-        <div class="card bg-light text-dark">
-          <p class="card-text">Facts About Me: I actively play soccer, enjoy skating around Boulder, and I love dogs. I am studying Computer Science because I find
-        it to be really interesting and fun to solve the puzzles that they encircle. </p>
+    <div class="container">
+      <h1 class="display-4">Add New Article</h1>
+      <br>
+      <form>
+        <div class="form-group">
+          <label><b>Article Title</b></label>
+          <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Title">
+          <br>
+          <label><b>Author Name</b></label>
+          <input type="text" class="form-control" id="title" aria-describedby="emailHelp" placeholder="Name">
         </div>
-      </div>
-      <br>
-      <h2>My Professional Profile</h2>
-      <a href="https://github.com/ErikPohle" target="_blank" class="btn btn-outline-dark text-dark">My Github</a>
-      <br>
-      <img src="img\my_photo.jpg" class="rounded-circle" alt="My Photo" height="400" width="300">
-      <br>
-      <h3>My Favorite Projects</h3>
-      <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Project Name</th>
-            <th scope="col">Technology Used</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Fantasy Football Analyzer</td>
-            <td>Python, Django, Numpy, Pandas</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Ski Report</td>
-            <td>Python, Flask, Numpy, Pandas</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Image Compare</td>
-            <td>ASP .Net Core, Azure</td>
-          </tr>
-        </tbody>
-      </table>
-      <br>
-      <div class="container">
-      <div class="row">
-        <div class="col">
-          <h3> Countries Travelled </h3>
-          <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <ul>
-              <li>Brazil</li>
-              <li>Tanzania</li>
-              <li>Uganda</li>
-            </ul>
+        <div class="form-row">
+          <div class="col">
+            <p><b>Upload Files:</b></p>
+            <input type="file" id="myFile" name="filename2">
+          </div>
+          <div class="col">
+            <label><b>Pages<b></label>
+              <br>
+              <button class="btn btn-outline-dark btn-lg btn-block dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Academics
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
           </div>
         </div>
-        <div class="col">
-          <h3> My Interests </h3>
-          <div class="collapse multi-collapse" id="multiCollapseExample1">
-            <ol>
-              <li>Soccer</li>
-              <li>Artifical Intelligence</li>
-              <li>Skating</li>
-            </ol>
+        <div class="form-group">
+          <label>Article Text</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label>Select Tags</label>
+            <br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+              <label class="form-check-label" for="inlineCheckbox1" style="font-weight:normal">Python</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+              <label class="form-check-label" for="inlineCheckbox2" style="font-weight:normal">C++</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inlineCheckbox3" value="option3">
+              <label class="form-check-label" for="inlineCheckbox3" style="font-weight:normal">Java</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inlineCheckbox4" value="option4">
+              <label class="form-check-label" for="inlineCheckbox4" style="font-weight:normal">Scala</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" id="inlineCheckbox5" value="option5">
+              <label class="form-check-label" for="inlineCheckbox5" style="font-weight:normal">Perl</label>
+            </div>
+          </div>
+          <div class="col">
+            <label>Visibility</label>
+            <br>
+            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Public
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Private
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-
-      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Collapse</button>
-
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-      Open Modal (How to get working with one button?)
-    </button>
-
-    <!-- The Modal -->
-    <div class="modal" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-
-          <!-- Modal Header -->
-          <div class="modal-header">
-            <h4 class="modal-title">The Modal</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div>
+          <br>
+          <h5>Login to Finish Submitting</h5>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" id="username" aria-describedby="username" placeholder="Username">
+            </div>
+            <div class="col">
+              <input type="password" class="form-control" id="password" aria-describedby="username" placeholder="Password">
+            </div>
           </div>
-
-          <!-- Modal body -->
-          <div class="modal-body">
-            Hello! This is the Modal.
-          </div>
-
-          <!-- Modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-
+          <br>
+          <input type="checkbox" name="remember" value="remember"> <label style="font-weight:normal">Remember me</label>
+          <br>
+          <button class="btn btn-primary" type="button">Submit</button>
         </div>
-      </div>
+      </form>
     </div>
-
-      </div>
-
   </body>
 </html>
