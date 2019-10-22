@@ -128,6 +128,7 @@ function reset_play(){
 	move.value = "";
 	p1.disabled = false;
 	p2.disabled = false;
+	turn = 1;
 	document.getElementById("turn_info").innerHTML = "Game has not begin.";
 	started = false;
 
